@@ -12,8 +12,9 @@ class CharacterTest {
     }
     @Test
     void characterStartsWithCorrectProps(){
-        var car1 = new Character();
-        assertEquals(1000L, car1.getHealth());
-        assertEquals(1, car1.getLevel());
+        var char1 = new Character();
+        assertEquals(1000L, char1.getHealth());
+        assertEquals(1, char1.getLevel());
+        assertEquals(true, char1.isAlive());
     }
 }

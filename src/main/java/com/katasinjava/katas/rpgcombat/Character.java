@@ -12,4 +12,9 @@ public class Character {
     public long getLevel() {
         return this.level;
     }
+
+    private Boolean alive = true;
+    public boolean isAlive() {
+        return this.alive;
+    }
 }
