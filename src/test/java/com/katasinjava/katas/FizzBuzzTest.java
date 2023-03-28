@@ -19,5 +19,13 @@ class FizzBuzzTest {
         var sut = fizzbuzz.FizzBuzz(9);
         //Then
         assertEquals("Fizz", sut);
+    }    @Test
+    void fizzBuzzReturnsFizzIfNumIsDivisibleBy5() {
+        // Give
+        var fizzbuzz = new FizzBuzz();
+        //When
+        var sut = fizzbuzz.FizzBuzz(5);
+        //Then
+        assertEquals("Buzz", sut);
     }
 }
