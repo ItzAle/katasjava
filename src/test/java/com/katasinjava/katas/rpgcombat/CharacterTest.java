@@ -13,7 +13,7 @@ class CharacterTest {
     @Test
     void characterStartsWithCorrectProps(){
         var car1 = new Character();
-        Long sut = car1.getHealth();
-        assertEquals(1000L, sut);
+        assertEquals(1000L, car1.getHealth());
+        assertEquals(1, car1.getLevel());
     }
 }

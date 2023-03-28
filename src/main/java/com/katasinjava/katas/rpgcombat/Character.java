@@ -6,4 +6,10 @@ public class Character {
     public Long getHealth() {
         return this.health;
     }
+
+
+    private Integer level = 1;
+    public long getLevel() {
+        return this.level;
+    }
 }
