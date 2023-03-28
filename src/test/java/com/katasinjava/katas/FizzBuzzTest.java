@@ -14,7 +14,10 @@ class FizzBuzzTest {
     @Test
     void fizzBuzzReturnsFizzIfNumIsDivisibleBy3() {
         // Give
+        var fizzbuzz = new FizzBuzz();
         //When
+        var sut = fizzbuzz.FizzBuzz(9);
         //Then
+        assertEquals("Fizz", sut);
     }
 }
