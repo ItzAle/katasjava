@@ -23,6 +23,12 @@ public class Character {
     }
 
     private void damage(Long damage) {
-        this.health -= damage;
+        if(this.health < damage ){
+            this.health = 0L;
+            this.alive = false;
+            return;
+        }
+         this.health -= damage;
+
     }
 }

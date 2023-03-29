@@ -30,5 +30,19 @@ class CharacterTest {
         assertEquals(950L, victim.getHealth());
 
 
+    }    @Test
+    void ifDamageIs0HeDies(){
+
+        //Given
+        var victim = new Character();
+        var hitter = new Character();
+
+        //When
+        hitter.attacks(victim, 1300L);
+
+        //Then
+        assertEquals(0, victim.getHealth());
+
+
     }
 }
